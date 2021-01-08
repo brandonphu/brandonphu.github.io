@@ -1,0 +1,19 @@
+TODOs
+1. Build the project
+    - folder structure
+    - adding files
+    - connecting files
+
+2. Navbar
+    - links and a name
+
+3. Portfolio item grid (displays the different players)
+    - images
+    - titles
+    - descriptions
+    - animations (javascript)
+
+4. "About" page
+    - images
+    - split column layout
+    - content

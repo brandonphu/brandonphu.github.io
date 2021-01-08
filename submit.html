@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Submit a player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="database.html">Database</a>
+                </div>
+
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="submit.html">Submit</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>WORK IN PROGRESS</div>
+                </div>
+            </div> 
+        </div>
+    
+        <div class="form-wrapper">
+            <form action="insert.php" method="POST">
+                <table>
+                    <!--name of player-->
+                    <tr>
+                        <td>
+                            Player name*
+                        </td>
+                        <td>
+                            <input type="text" placeholder="first name and last name" name="PlayerName" required>
+                        </td>
+                    </tr>
+                    <!--player overall-->
+                    <tr>
+                        <td>
+                            Overall*
+                        </td>
+                        <td>
+                            <input type="number" placeholder="65 TO 115" name="Overall" required>
+                        </td>
+                    </tr>
+                    <!--player position-->
+                    <tr>
+                        <td>
+                            Position*
+                        </td>
+                        <td>
+                            <select name="PlayerPosition" required>
+                                <option selected hidden value="">Select position</option>
+                                <option value="PG">PG</option>
+                                <option value="SG">SG</option>
+                                <option value="SF">SF</option>
+                                <option value="PF">PF</option>
+                                <option value="C">C</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!--gameplay style (balanced, sharpshooter, street, lockdown-->
+                    <tr>
+                        <td>
+                            Gameplay Style*
+                        </td>
+                        <td>
+                            <select name="PlayerGameplayStyle" required>
+                                <option selected hidden value="">Select style</option>
+                                <option value="BALANCED">BALANCED</option>
+                                <option value="SHARPSHOOTER">SHARPSHOOTER</option>
+                                <option value="LOCKDOWN">LOCKDOWN</option>
+                                <option value="STREET">STREET</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!--this could be player decription or program-->
+                    <tr>
+                        <td>
+                            Program
+                        </td>
+                        <td>
+                            <input type="text" name="PlayerProgram">
+                        </td>
+                    </tr>
+                    <!--BOOSTS/ABILITIES-->
+                    <tr>
+                        <td>
+                            Boost/Ability #1
+                        </td>
+                        <td>
+                            <select name="FirstValueOfBoost">
+                                <option selected hidden value="">Select value</option>
+                                <option value="none1">none</option>
+                                <option value="1">+1</option>
+                                <option value="2">+2</option>
+                                <option value="3">+3</option>
+                                <option value="4">+4</option>
+                                <option value="5">+5</option>
+                                <option value="6">+6</option>
+                                <option value="8">+8</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="FirstBoostOrAbility">
+                                <option selected hidden>Select boost</option>
+                                <option value="none">none</option>
+                                <option value="SPEED to Team">SPEED to Team</option>
+                                <option value="BLOCK to Team">BLOCK to Team</option>
+                                <option value="DUNK to Team">DUNK to Team</option>
+                                <option value="LAYUP to Team">LAYUP to Team</option>
+                                <option value="MIDRANGE to Team">MIDRANGE to Team</option>
+                                <option value="3PT to Team">3PT to Team</option>
+                                <option value="CONTESTED SHOT to Team">CONTESTED SHOT to Team</option>
+                                <option value="Vacuum">Vacuum</option>
+                                <option value="Brick Wall">Brick Wall</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <!--
+                    <tr>
+                        <td>
+                            Boost/Ability #2
+                        </td>
+                        <td>
+                            <select name="value2">
+                                <option selected hidden>Select value</option>
+                                <option>none</option>
+                                <option>+1</option>
+                                <option>+2</option>
+                                <option>+3</option>
+                                <option>+4</option>
+                                <option>+5</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="boost2">
+                                <option selected hidden>Select boost</option>
+                                <option>none</option>
+                                <option>SPEED to Team</option>
+                                <option>BLOCK to Team</option>
+                                <option>DUNK to Team</option>
+                                <option>LAYUP to Team</option>
+                                <option>MIDRANGE to Team</option>
+                                <option>3PT to Team</option>
+                                <option>CONTESTED SHOT to Team</option>
+                                <option>Vacuum</option>
+                                <option>Brick Wall</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Boost/Ability #3
+                        </td>
+                        <td>
+                            <select name="value3">
+                                <option selected hidden>Select value</option>
+                                <option>none</option>
+                                <option>+1</option>
+                                <option>+2</option>
+                                <option>+3</option>
+                                <option>+4</option>
+                                <option>+5</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="boost3">
+                                <option selected hidden>Select boost</option>
+                                <option>none</option>
+                                <option>SPEED to Team</option>
+                                <option>BLOCK to Team</option>
+                                <option>DUNK to Team</option>
+                                <option>LAYUP to Team</option>
+                                <option>MIDRANGE to Team</option>
+                                <option>3PT to Team</option>
+                                <option>CONTESTED SHOT to Team</option>
+                                <option>Vacuum</option>
+                                <option>Brick Wall</option>
+                            </select>
+                        </td>
+                    </tr>
+                    //-->
+
+                    <!--General stats/attributes-->
+                    <tr>
+                        <td>
+                            Athleticism*
+                        </td>
+                        <td>
+                            <input type="number"  name="Athleticism" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Rebounding*
+                        </td>
+                        <td>
+                            <input type="number"  name="Rebounding" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Post Offense*
+                        </td>
+                        <td>
+                            <input type="number"  name="PostOffense" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Post Defense*
+                        </td>
+                        <td>
+                            <input type="number"  name="PostDefense" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Inside Scoring*
+                        </td>
+                        <td>
+                            <input type="number"  name="InsideScoring" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Outside Scoring*
+                        </td>
+                        <td>
+                            <input type="number"  name="OutsideScoring" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Defense*
+                        </td>
+                        <td>
+                            <input type="number"  name="Defense" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Playmaking*
+                        </td>
+                        <td>
+                            <input type="number"  name="Playmaking" required>
+                        </td>
+                    </tr>
+                    <!--submit button-->
+                    
+                    <tr>
+                        <td>
+                            <input type="Submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    
+    </div>
+</body>
+
+
+</html>

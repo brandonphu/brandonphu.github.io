@@ -17,5 +17,3 @@ TODOs
     - images
     - split column layout
     - content
-
-s

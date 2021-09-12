@@ -5,15 +5,17 @@ TODOs
     - connecting files
 
 2. Navbar
-    - links and a name
+    - links (experience, projects, about)
 
-3. Portfolio item grid (displays the different players)
-    - images
-    - titles
-    - descriptions
-    - animations (javascript)
+3. Experiecne page
+    - resume experiences
+    - add pc shop as well?
 
-4. "About" page
-    - images
-    - split column layout
-    - content
+4. Projects
+    - include descriptions from past resumes
+    - videos/pictures/github code
+    - Confluence validation github page
+        - once I have finished designing UV cutoff, add UV cutoff pictures from Altium
+
+5. About page
+    - resume skills, hobbies/interests

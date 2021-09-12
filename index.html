@@ -4,254 +4,100 @@
 <head>
     <meta charset="utf-8" />
     <title>Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 
 <body>
+    <div class="center-name">
+        <p>BRANDON PHU</p>
+    </div>
+
     <div class="container">
         <div class="nav-wrapper">
             <div class="left-side">
 
                 <div class="nav-link-wrapper active-nav-link">
-                    <a href="index.html">Home</a>
+                    <a href="index.html">Experience</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="projects.html">Projects</a>
                 </div>
 
                 <div class="nav-link-wrapper">
                     <a href="about.html">About</a>
                 </div>
-
-                <div class="nav-link-wrapper">
-                    <a href="database.php">Database</a>
-                </div>
-
-                <div class="nav-link-wrapper">
-                    <a href="submit.html">Submit</a>
-                </div>
-
             </div>
 
-            <div class="right-side">
-                <div class="brand">
-                    <div>NBA LIVE MOBILE S4 DATABASE</div>
-                </div>
+
+        </div>
+
+        <div class="content-wrapper">
+            <div class="profile-content-wrapper">
+                <h1>Hardware Engineering Co-op</h1>
+                <h2>Midnight Sun | May 2021 - Present</h2>
+                <!-- unordered list -->
+                <ul>
+                    <li>Assembled and reworked PCBs involving sensing and control circuits related to solar, BMS, and
+                        telemetry systems using reflow oven, soldering iron, and heat gun</li>
+                    <li>Performed board bring-up process for low voltage power distribution and auxiliary pack BMS PCBs
+                        by validating with custom firmware on STM32F072 MCUs</li>
+                    <li>Designed second revision of auxiliary pack battery management system incorporating fuel gauge,
+                        differential I2C, and under voltage cutoff circuitry</li>
+                    <li>Conducted board revision process for auxiliary pack PCB: created a block diagram, simulated
+                        under voltage cutoff circuitry, performed schematic capture and PCB layout</li>
+                    <li>Managed parts procurement from BOMs sent by tracking down specialized IC availability and
+                        organized part inventory</li>
+
+                </ul>
+            </div>
+
+
+
+        </div>
+
+        <div class="content-wrapper">
+            <div class="profile-content-wrapper">
+                <h1>Hardware Design Intern</h1>
+                <h2>The DTFC | Sept 2020 - Dec 2020</h2>
+                <ul>
+                    <li>Designed multilayered PCB by reverse engineering PWM controller and incorporated charger IC;
+                        performed PCB layout using EAGLE while finding components on Digi-key</li>
+                    <li>Contributed to component libraries by creating new schematic diagrams and footprints following
+                        datasheet specifications</li>
+                    <li>Performed hardware bring-up for development boards and programmed source code for IOT sensor
+                        applications</li>
+                    <li>Took part in product design; determined production definition, features, use cases, requirements
+                        and specifications</li>
+                </ul>
             </div>
         </div>
 
         <div class="content-wrapper">
-            <div class="portfolio-items-wrapper">
-                <!-- Lebron -->
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/lebron.jpg)"></div>
-
-                    <div class="img-text-wrapper">
-
-                        <div class="logo-wrapper">
-                            <img src="images/logos/lebron.jpg">
-                        </div>
-
-                        <div class="subtitle">
-                            <p>LEBRON JAMES</p>
-                            <p>PG,SG,SF,PF,C</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- anthony davis -->
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/davis.jpg)"></div>
-
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="images/logos/davis.jpg">
-                        </div>
-
-                        <div class="subtitle">
-                            <p>ANTHONY DAVIS</p>
-                            <p>PF,C</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- durant -->
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/durant.jpg)"></div>
-
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="images/logos/durant.jpg">
-                        </div>
-
-                        <div class="subtitle">
-                            <p>KEVIN DURANT</p>
-                            <p>PG,SG,SF,PF,C</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- kawhi -->
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/kawhi.jpg)"></div>
-
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="images/logos/kawhi.jpg">
-                        </div>
-
-                        <div class="subtitle">
-                            <p>KAWHI LEONARD</p>
-                            <p>SF,PF</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- paul george -->
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/PG.jpg)"></div>
-
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="images/logos/PG.jpg">
-                        </div>
-
-                        <div class="subtitle">
-                            <p>PAUL GEORGE</p>
-                            <p>SG,SF</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- steph curry -->
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/curry.jpg)"></div>
-
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="images/logos/curry.jpg">
-                        </div>
-
-                        <div class="subtitle">
-                            <p>STEPH CURRY</p>
-                            <p>PG,SG</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- james harden -->
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/harden.jpg)"></div>
-
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="images/logos/harden.jpg">
-                        </div>
-
-                        <div class="subtitle">
-                            <p>JAMES HARDEN</p>
-                            <p>PG,SG</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- westbrook -->
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/westbrook.jpg)"></div>
-
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="images/logos/westbrook.jpg">
-                        </div>
-
-                        <div class="subtitle">
-                            <p>RUSSELL WESTBROOK</p>
-                            <p>PG</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- giannis -->
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/giannis.jpg)"></div>
-
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="images/logos/giannis.jpg">
-                        </div>
-
-                        <div class="subtitle">
-                            <p>GIANNIS ANTETOKOUNMPO</p>
-                            <p>PG,SG,SF,PF,C</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- shaq -->
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/shaq.jpg)"></div>
-
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="images/logos/shaq.jpg">
-                        </div>
-
-                        <div class="subtitle">
-                            <p>SHAQUILLE O'NEAL</p>
-                            <p>C</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- yao ming -->
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/yao.jpg)"></div>
-
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="images/logos/yao.jpg">
-                        </div>
-
-                        <div class="subtitle">
-                            <p>YAO MING</p>
-                            <p>PF,C</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ALL players -->
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-image:url(images/all.jpg)"></div>
-
-                    <div class="img-text-wrapper">
-
-                        <div class="logo-wrapper">
-                            <a href="database.php">
-                                <img src="images/logos/all.jpg">
-                            </a>
-                        </div>
-
-                        <div class="subtitle">
-                            SEE ALL PLAYERS
-                        </div>
-                    </div>
-                </div>
-
+            <div class="profile-content-wrapper">
+                <h1>Mechatronic Design & Creation of Sidewalk Robot Attachments</h1>
+                <h2>Top Hat Robotics | Jan 2020 - Apr 2020</h2>
+                <ul>
+                    <li>Designed and prototyped lawn mowing attachment with SOLIDWORKS using aluminum extrusions and
+                        brackets</li>
+                    <li>Collaborated in team environment to assemble skeletons for sidewalk robots; used shop equipment
+                        such as a drill press, band saw, and belt sander</li>
+                    <li>Managed harness creation by crimping and soldering quick connects to wire electronic components
+                        inside robotic frame</li>
+                    <li>Designed and 3D-printed enclosures for components such as horn and LED strips</li>
+                </ul>
             </div>
         </div>
+
     </div>
 </body>
 
-<script>
-    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
 
-    portfolioItems.forEach(portfolioItem => {
-        portfolioItem.addEventListener('mouseover', () => {
-            portfolioItem.childNodes[1].classList.add('img-darken');
-        })
-
-        portfolioItem.addEventListener('mouseout', () => {
-            portfolioItem.childNodes[1].classList.remove('img-darken');
-        })
-    })
-</script>
 
 </html>

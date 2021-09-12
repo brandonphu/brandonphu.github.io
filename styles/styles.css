@@ -1,141 +1,271 @@
-/* Master styles */
-
-body {
-    font-family: 'Noto Sans JP', sans-serif;
-    margin: 0px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-
-/*Navigation bar styles */
-
-.nav-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 38px;
-}
-
-.left-side {
-    display: flex;
-}
-
-.nav-wrapper>.left-side>div {
-    margin-right: 20px;
-    font-size: 0.9em;
-    text-transform: uppercase;
-}
-
-.nav-link-wrapper {
-    height: 22px;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.5s;
-}
-
-.nav-link-wrapper a {
-    color: #8a8a8a;
-    text-decoration: none;
-    transition: color 0.5s;
-}
-
-.nav-link-wrapper:hover {
-    border-bottom: 1px solid #00FFFF;
-}
-
-.nav-link-wrapper a:hover {
-    color: #00FFFF;
-}
-
-.active-nav-link {
-    border-bottom: 1px solid black;
-}
-
-.active-nav-link a {
-    color: black !important;
-}
-
-
-/* Portfolio styles */
-
-.portfolio-items-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.portfolio-item-wrapper {
-    position: relative;
-}
-
-.portfolio-img-background {
-    height: 350px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.img-text-wrapper {
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-.logo-wrapper img {
-    width: 50%;
-    margin-bottom: 20px;
-    opacity: 0.2;
-}
-
-.img-text-wrapper .subtitle {
-    transition: 1s;
-    font-weight: 600;
-    color: transparent;
-}
-
-.img-text-wrapper:hover .subtitle {
-    font-weight: 600;
-    color: lightseagreen;
-}
-
-.img-darken {
-    transition: 1s;
-    filter: brightness(10%);
-}
-
-.form-wrapper {
-    margin: 0 auto;
-    width: 550px;
-    background: lightseagreen;
-    padding: 30px;
-    border-radius: 25px;
-}
-
-
-/* About page styles */
-
-.two-column-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.profile-image-wrapper img {
-    width: 100%;
-}
-
-.profile-content-wrapper {
-    padding: 30px;
-}
-
-.profile-content-wrapper h1 {
-    color: red;
-}
+        /* Master styles */
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0px;
+            background-color: lightgray;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        
+        .center-name {
+            padding: 1px;
+            color: white;
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+            background-color: #7ab4c1;
+        }
+        
+        .iframe {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* Experience page styles */
+        
+        .two-column-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+        
+        .profile-image-wrapper img {
+            width: 12.5%;
+            border-top-left-radius: 50% 50%;
+            border-top-right-radius: 50% 50%;
+            border-bottom-right-radius: 50% 50%;
+            border-bottom-left-radius: 50% 50%;
+            float: left;
+        }
+        
+        .content-wrapper {
+            background: lightgray;
+            margin: 0 auto;
+            padding: 15px;
+        }
+        
+        .profile-content-wrapper {
+            max-width: 750px;
+            min-width: 600px;
+            background: white;
+            /* margin: 0 auto; */
+            padding: 15px;
+            border-radius: 25px;
+            border: 2px solid #5a6270;
+        }
+        
+        .profile-content-wrapper-pdf {
+            justify-content: center;
+            /* max-width: 750px; */
+            min-width: 1500px;
+            background: white;
+            /* margin: 0 auto; */
+            padding: 15px;
+            border-radius: 25px;
+            border: 2px solid #5a6270;
+            color: #5a6270;
+        }
+        
+        .profile-content-wrapper h1 {
+            color: #5a6270;
+            font-weight: 800;
+        }
+        
+        .profile-content-wrapper h2 {
+            color: #5a6270;
+        }
+        
+        .profile-content-wrapper ul {
+            color: #5a6270;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        /* this is specifically used for About page */
+        
+        .profile-content-wrapper-center {
+            text-align: center;
+            /* min-width: 600px; */
+            background: rgb(255, 236, 130);
+            /* margin: 0 auto; */
+            padding: 15px;
+            border-radius: 25px;
+            border: 2px solid #5a6270;
+        }
+        
+        .profile-content-wrapper-center h1 {
+            font-weight: 1200;
+            color: #5a6270;
+        }
+        
+        .profile-content-wrapper-about {
+            /* text-align: center; */
+            min-width: 400px;
+            background: white;
+            /* margin: 0 auto; */
+            padding: 15px;
+            border-radius: 25px;
+            border: 2px solid #5a6270;
+        }
+        
+        .profile-content-wrapper-about h1 {
+            color: #5a6270;
+            font-weight: 800;
+        }
+        
+        .profile-content-wrapper-about h2 {
+            color: #5a6270;
+        }
+        
+        .profile-content-wrapper-about li {
+            color: #5a6270;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        /* Style all font awesome icons */
+        
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+        }
+        /* Add a hover effect if you want */
+        
+        .fa:hover {
+            opacity: 0.7;
+        }
+        /* Set a specific color for each brand */
+        
+        .fa-envelope {
+            color: white;
+            background-color: rgb(136, 0, 0);
+        }
+        
+        .fa-linkedin {
+            color: white;
+            background-color: #0077b5;
+        }
+        
+        .fa-github {
+            color: white;
+            background-color: darkslategrey;
+        }
+        
+        .fa-download {
+            color: black;
+            background-color: green;
+        }
+        
+        .icon-styling {
+            justify-content: right;
+        }
+        /*Navigation bar styles */
+        
+        .nav-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background-color: #333333;
+            border-right: 1px solid #bbb;
+        }
+        
+        .left-side {
+            display: flex;
+        }
+        
+        .nav-wrapper>.left-side>div {
+            margin-right: 20px;
+            font-size: 1.5em;
+        }
+        
+        .nav-link-wrapper {
+            height: 22px;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.5s;
+        }
+        
+        .nav-link-wrapper a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.5s;
+        }
+        
+        .nav-link-wrapper a:hover {
+            color: #ca7300;
+        }
+        
+        .active-nav-link {
+            padding-bottom: 5px;
+            border-bottom: 3px solid white;
+        }
+        
+        .active-nav-link a {
+            color: white !important;
+        }
+        /* Portfolio styles */
+        
+        .portfolio-items-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        
+        .portfolio-item-wrapper {
+            position: relative;
+        }
+        
+        .portfolio-img-background {
+            height: 350px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        .img-text-wrapper {
+            position: absolute;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+        
+        .logo-wrapper img {
+            width: 50%;
+            margin-bottom: 20px;
+            opacity: 0.2;
+        }
+        
+        .img-text-wrapper .subtitle {
+            transition: 1s;
+            font-weight: 600;
+            color: transparent;
+        }
+        
+        .img-text-wrapper:hover .subtitle {
+            font-weight: 600;
+            color: lightseagreen;
+        }
+        
+        .img-darken {
+            transition: 1s;
+            filter: brightness(10%);
+        }
+        
+        .form-wrapper {
+            margin: 0 auto;
+            width: 550px;
+            background: lightseagreen;
+            padding: 30px;
+            border-radius: 25px;
+        }

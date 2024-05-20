@@ -126,6 +126,12 @@
             font-size: 1.2em;
             font-weight: bold;
         }
+
+        .profile-content-wrapper-about p {
+            color: #5a6270;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
         /* Style all font awesome icons */
         
         .fa {
